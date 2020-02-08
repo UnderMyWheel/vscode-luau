@@ -1,6 +1,12 @@
 # Roblox Lua Changelog
 
-## 0.0.3 (3 February 2020)
+## 0.0.4 (7 February 2020)
+
+### Enhancements
+
+1. Roblox globals use keyword highlighting
+
+## 0.0.3 (7 February 2020)
 
 ### Enhancements
 
@@ -15,7 +21,7 @@
 
 1. ``utf8.charpattern`` now has the correct syntax color
 
-## 0.0.2 (3 February 2020)
+## 0.0.2 (7 February 2020)
 
 ### Enhancements
 
