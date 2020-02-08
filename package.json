@@ -1,0 +1,49 @@
+{
+    "name": "roblox-lua",
+    "icon": "icon.png",
+    "displayName": "Roblox Lua",
+    "description": "Support for Roblox Lua.",
+    "version": "0.0.3",
+    "publisher": "UnderMyWheel",
+    "license": "MIT",
+    "homepage": "https://github.com/UnderMyWheel/vscode-roblox-lua",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/UnderMyWheel/vscode-roblox-lua"
+    },
+    "bugs": {
+        "url": "https://github.com/UnderMyWheel/vscode-roblox-lua/issues"
+    },
+    "galleryBanner": {
+        "color": "#1e415e",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "roblox-lua",
+                "aliases": [
+                    "Lua",
+                    "Roblox Lua"
+                ],
+                "extensions": [
+                    ".rbxs"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "roblox-lua",
+                "scopeName": "source.roblox-lua",
+                "path": "./syntaxes/roblox-lua.tmLanguage.json"
+            }
+        ]
+    }
+}
