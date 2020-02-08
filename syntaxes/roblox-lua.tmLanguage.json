@@ -2,8 +2,8 @@
 	"name": "Roblox Lua",
 	"patterns": [
 		{
-			"name": "support.variable.roblox-lua",
-			"match": "\\b(workspace|game|script|plugin|shared)\\b"
+			"name": "keyword.roblox-lua",
+			"match": "\\b(workspace|game|script|plugin|shared|utf8\\.(charpattern))\\b"
 		},
 		{
 			"name": "support.class.roblox-lua",
@@ -12,10 +12,6 @@
 		{
 			"name": "support.class.roblox-lua",
 			"match": "\\b(Axes|BrickColor|CFrame|Color3|ColorSequence|ColorSequenceKeypoint|DockWidgetPluginGuiInfo|Faces|Instance|NumberRange|NumberSequence|NumberSequenceKeypoint|PathWayPoint|PhysicalProperties|Random|Ray|RBXScriptConnection|RBXScriptSignal|Rect|Region3|Region3int16|TweenInfo|UDim|UDim2|Vector2|Vector2int16|Vector3|Vector3int16)\\b"
-		},
-		{
-			"name": "keyword.roblox-lua",
-			"match": "\\b(utf8\\.(charpattern))\\b"
 		},
 		{
 			"name": "keyword.control.roblox-lua",
