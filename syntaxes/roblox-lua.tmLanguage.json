@@ -19,7 +19,7 @@
 		},
 		{
 			"name": "constant.numeric.roblox-lua",
-			"match": "\\b([0-9_]+)\\b"
+			"match": "(?<!\\S)(?!$)[-+]?(\\d*|\\d+(?:_\\d+)*)(?:\\.\\d+)?(?!\\S)"
 		},
 		{
 			"captures": {
