@@ -1,5 +1,16 @@
 # Roblox Lua Changelog
 
+## 0.0.5 (9 February 2020)
+
+### Enhancements
+
+1. Support for positive and negative signs
+
+### Fixed
+
+1. Decimals written as ".x" not supported
+2. Underscores being highlighted all the time
+
 ## 0.0.4 (7 February 2020)
 
 ### Enhancements
@@ -17,7 +28,7 @@
 5. Extension changelog
 6. Extension open-sourced [on GitHub](https://github.com/UnderMyWheel/vscode-roblox-lua)
 
-###Fixed
+### Fixed
 
 1. ``utf8.charpattern`` now has the correct syntax color
 
