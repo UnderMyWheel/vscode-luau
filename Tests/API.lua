@@ -153,9 +153,6 @@ utf8.nfdnormalize()
 
 utf8.charpattern
 
-1_000_000
-242_
-
 
 local function test()
 
@@ -164,3 +161,25 @@ local function test()
     continue
 
 end
+
+
+--- All below should be included ---
+3941
+1_000_000
+-1_000_000
+.05
+53.25
+5_5
+-5
++5
+-.5
+
+--- All below should NOT be included ---
+
+5,242
+242_
+5_
+_
+.
+_55
+1.a5
