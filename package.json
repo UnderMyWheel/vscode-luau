@@ -3,7 +3,7 @@
     "icon": "icon.png",
     "displayName": "Roblox Lua",
     "description": "Support for Roblox Lua.",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "UnderMyWheel",
     "license": "MIT",
     "homepage": "https://github.com/UnderMyWheel/vscode-roblox-lua",
