@@ -1,5 +1,11 @@
 # Roblox Lua Changelog
 
+## 0.0.6 (12 February 2020)
+
+### Fixed
+
+1. Fixed snytax highlighting not working when code is indented
+
 ## 0.0.5 (9 February 2020)
 
 ### Enhancements
