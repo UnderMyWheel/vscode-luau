@@ -1,49 +1,67 @@
 {
-    "name": "roblox-lua",
+    "name": "luau",
     "icon": "icon.png",
-    "displayName": "Roblox Lua",
-    "description": "Support for Roblox Lua.",
-    "version": "0.0.6",
+    "displayName": "Luau",
+    "description": "Support for Roblox's Luau language.",
+    "version": "1.0.0",
     "publisher": "UnderMyWheel",
     "license": "MIT",
-    "homepage": "https://github.com/UnderMyWheel/vscode-roblox-lua",
+    "homepage": "https://github.com/UnderMyWheel/vscode-luau",
     "repository": {
         "type": "git",
-        "url": "https://github.com/UnderMyWheel/vscode-roblox-lua"
+        "url": "https://github.com/UnderMyWheel/vscode-luau"
     },
     "bugs": {
-        "url": "https://github.com/UnderMyWheel/vscode-roblox-lua/issues"
+        "url": "https://github.com/UnderMyWheel/vscode-luau/issues"
     },
     "galleryBanner": {
         "color": "#1e415e",
         "theme": "dark"
     },
     "engines": {
-        "vscode": "^1.42.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
+        "Snippets",
         "Programming Languages"
     ],
+    "activationEvents": [
+        "onLanguage:luau"
+    ],
+    "main": "./src/extension.ts",
     "contributes": {
         "languages": [
             {
-                "id": "roblox-lua",
+                "id": "luau",
                 "aliases": [
-                    "Lua",
-                    "Roblox Lua"
+                    "Luau"
                 ],
                 "extensions": [
-                    ".rbxs"
+                    ".lua",
+                    ".luau"
                 ],
                 "configuration": "./language-configuration.json"
             }
         ],
+        "snippets": [
+            {
+                "language": "luau",
+                "path": "./snippets/snippets.json"
+            }
+        ],
         "grammars": [
             {
-                "language": "roblox-lua",
-                "scopeName": "source.roblox-lua",
-                "path": "./syntaxes/roblox-lua.tmLanguage.json"
+                "language": "luau",
+                "scopeName": "source.luau",
+                "path": "./syntaxes/luau.tmLanguage.json"
             }
         ]
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
     }
 }

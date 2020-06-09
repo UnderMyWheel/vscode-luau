@@ -1,4 +1,20 @@
-# Roblox Lua Changelog
+# Luau Changelog
+
+## 1.0.0 (8 June 2020)
+
+### Enhancements
+
+1. Snippet support
+2. Removed unused keywords
+3. Rebranded from "Roblox Lua" to "Luau"
+4. `plugin` is now properly highlighted as a built-in keyword
+5. Built-in library functions are highlighted differently from other functions
+
+### Fixed
+
+1. Fixed ``math.sinh`` not being highlighted
+2. Fixed text beginning with ``Enum`` from being highlighted
+3. Fixed parenthesis and brackets auto closing in comments and strings
 
 ## 0.0.6 (12 February 2020)
 
@@ -21,7 +37,7 @@
 
 ### Enhancements
 
-1. Roblox globals use keyword highlighting
+1. Luau globals use keyword highlighting
 
 ## 0.0.3 (7 February 2020)
 
@@ -32,7 +48,7 @@
 3. ``local`` keyword highlighting matches other built-in keywords highlighting
 4. Extension license
 5. Extension changelog
-6. Extension open-sourced [on GitHub](https://github.com/UnderMyWheel/vscode-roblox-lua)
+6. Extension open-sourced [on GitHub](https://github.com/UnderMyWheel/vscode-luau)
 
 ### Fixed
 
@@ -48,6 +64,6 @@
 ## 0.0.1 (7 February 2020)
 
 ### Features
-1. Roblox globals highlighting
-2. Roblox data type highlighting
-3. Roblox library functions and constants highlighting
+1. Luau globals highlighting
+2. Luau data type highlighting
+3. Luau library functions and constants highlighting
