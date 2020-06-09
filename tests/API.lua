@@ -6,19 +6,14 @@ ColorSequence
 ColorSequenceKeypoint
 DockWidgetPluginGuiInfo
 Enum
-EnumItem
-Enums
 Faces
 Instance
 NumberRange
 NumberSequence
 NumberSequenceKeypoint
-PathWayPoint
 PhysicalProperties
 Random
 Ray
-RBXScriptConnection
-RBXScriptSignal
 Rect
 Region3
 Region3int16
@@ -30,27 +25,67 @@ Vector2int16
 Vector3
 Vector3int16
 
-game
+and
+break
+do
+else
+elseif
+end
+false
+for
+function
+if
+in
+local
+nil
+not
+or
 plugin
-shared
-script
-workspace
+repeat
+return
+self
+then
+true
+until
+while
+
+assert()
+collectgarbage()
+error()
+getmetatable()
+ipairs
+newproxy()
+next
+pairs
+pcall()
+print()
+rawequal()
+rawget()
+rawset()
+select()
+setmetatable()
+tonumber()
+tostring()
+type()
+unpack()
+xpcall()
+_G
+_VERSION
 
 delay()
-DebuggerManager()
 elapsedTime()
-PluginManager()
-printidentity()
 require()
 settings()
 spawn()
-stats()
 tick()
 typeof()
 UserSettings()
-version()
 wait()
 warn()
+game
+shared
+script
+workspace
 
 bit32.arshift()
 bit32.band()
@@ -71,6 +106,13 @@ coroutine.running()
 coroutine.status()
 coroutine.wrap()
 coroutine.yield()
+
+DateTime.fromIsoDate()
+DateTime.fromLocalTime()
+DateTime.fromUniversalTime()
+DateTime.fromUnixTimestamp()
+DateTime.fromUnixTimestampMillis()
+DateTime.now()
 
 debug.traceback()
 debug.profilebegin()
@@ -103,6 +145,7 @@ math.random()
 math.randomseed()
 math.sign()
 math.sin()
+math.sinh()
 math.sqrt()
 math.tan()
 math.tanh()
@@ -155,12 +198,14 @@ utf8.charpattern
 
 
 local function test()
-
-    break
-
-    continue
-
+    
 end
+
+-- Single line comment
+
+--[[
+    Block comment
+]]
 
 
 --- All below should be included ---
