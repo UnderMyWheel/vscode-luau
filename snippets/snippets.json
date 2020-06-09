@@ -1,0 +1,573 @@
+{
+    "function": {
+        "prefix": "func",
+        "body": "function ${1:functionName}(${2:args})\n\t${0}\nend",
+        "description": "A group of statements that perform a task together."
+    },
+    "anonymous function": {
+        "prefix": "afunc",
+        "body": "${1:functionName} = function(${2:args})\n\t${0}\nend",
+        "description": "A group of statements, without a name, that perform a task together."
+    },
+    "local function": {
+        "prefix": "lfunc",
+        "body": "local function ${1:functionName}(${2:args})\n\t${0}\nend",
+        "description": "A group of statements, restricted to a given scope, that perform a task together."
+    },
+    "for loop": {
+        "prefix": "for",
+        "body": "for ${1:i} = ${2:start}, ${3:end}, ${4:increment} do\n\t${0}\nend",
+        "description": "A loop that will execute something for each value of var from exp1 to exp2, using exp3 as the step to increment var."
+    },
+    "for pairs loop": {
+        "prefix": "forp",
+        "body": "for ${1:key}, ${2:value} in pairs(${3:table}) do\n\t${0}\nend",
+        "description": "Returns an iterator function that will iterate over all key-value pairs of the table passed."
+    },
+    "for ipairs loop": {
+        "prefix": "fori",
+        "body": "for ${1:index}, ${2:value} in ipairs(${3:table}) do\n\t${0}\nend",
+        "description": "Returns an iterator function that will iterate over all index-value pairs of the table passed."
+    },
+    "if condition": {
+        "prefix": "if",
+        "body": "if ${1:condition} then\n\t${0}\nend",
+        "description": "Executes a block of code if a specific condition is true."
+    },
+    "if else condition": {
+        "prefix": "ife",
+        "body": "if ${1:condition} then\n\t${0}\nelse\n\t\nend",
+        "description": "Executes a block of code if a specific condition is true and all the previous conditions are not met"
+    },
+    "if not condition": {
+        "prefix": "ifn",
+        "body": "if not ${1:condition} then\n\t${0}\nend",
+        "description": "Executes a block of code if a specific condition is false."
+    },
+    "if not else condition": {
+        "prefix": "ifne",
+        "body": "if not ${1:condition} then\n\t${0}\nelse\n\t\nend",
+        "description": "Executes a block of code if a specific condition is false and all the previous conditions are not met."
+    },
+    "repeat loop": {
+        "prefix": "rep",
+        "body": "repeat\n\t${0}\nuntil ${1:condition}",
+        "description": "Repeatedly executes a block of code until the condition is met."
+    },
+    "while loop": {
+        "prefix": "whi",
+        "body": "while ${1:condition} do\n\t${0}\nend",
+        "description": "Repeatedly executes a block of code while the condition is true."
+    },
+
+    "local variable": {
+        "prefix": "loc",
+        "body": "local ${1:variable} = ${2:value}",
+        "description": "A variable accessible only within the scope of where it's declared."
+    },
+    "table": {
+        "prefix": "tab",
+        "body": "${1:variable} = {${2:values}}",
+        "description": "A global table accessible by all scopes wthin the same script."
+    },
+    "local table": {
+        "prefix": "ltab",
+        "body": "local ${1:variable} = {${2:values}}",
+        "description": "A table accessible only within the scope of where it's declared."
+    },
+    "return": {
+        "prefix": "ret",
+        "body": "return ${1:value}",
+        "description": "Returns results or finishes a function."
+    },
+
+    "print": {
+        "prefix": "pri",
+        "body": "print(${1:params})",
+        "description": "Receives any number of arguments, and prints their values to the output."
+    },
+    "require": {
+        "prefix": "req",
+        "body": "require(${1:hierarchicalLocation})",
+        "description": "Returns what the required ModuleScript returns."
+    },
+    "tonumber": {
+        "prefix": "tonum",
+        "body": "tonumber(${1:arg})",
+        "description": "Attempts to convert the arg into a number with a specified base to interpret the value in. If it cannot be converted, this function returns nil."
+    },
+    "tostring": {
+        "prefix": "tostr",
+        "body": "tostring(${1:e})",
+        "description": "Receives an argument of any type and converts it to a string in a reasonable format."
+    },
+
+    "get service": {
+        "prefix": "getser",
+        "body": "game:GetService(\"${1|AssetService,BadgeService,ChangeHistoryService,CollectionService,ContextActionService,DataStoreService,GamepadService,GamePassService,GroupService,GuiService,HapticService,HttpService,InsertService,JointsService,LocalizationService,LogService,MarketplaceService,MessagingService,PathfindingService,PhysicsService,PluginGuiService,PolicyService,RunService,ServerScriptService,SocialService,SoundService,StudioService,TeleportService,TestService,TextService,TweenService,UserInputService,VRService,Workspace|}\")",
+        "description": "Returns a service with the class name requested."
+    },
+
+    "bit32.arshift": {
+        "prefix": "arshift",
+        "body": "bit32.arshift(${1:x}, ${2:disp})",
+        "description": "Returns the number x shifted disp bits to the right."
+    },
+    "bit32.band": {
+        "prefix": "band",
+        "body": "bit32.band(${1:numbers})",
+        "description": "Returns the bitwise and of its operands."
+    },
+    "bit32.bnot": {
+        "prefix": "bnot",
+        "body": "bit32.bnot(${1:x})",
+        "description": "Returns the bitwise negation of x."
+    },
+    "bit32.bor": {
+        "prefix": "bor",
+        "body": "bit32.bor(${1:numbers})",
+        "description": "Returns the bitwise or of its operands."
+    },
+    "bit32.btest": {
+        "prefix": "btest",
+        "body": "bit32.btest(${1:numbers})",
+        "description": "Returns a boolean signalling whether the bitwise and of its operands is different from zero."
+    },
+    "bit32.bxor": {
+        "prefix": "bxor",
+        "body": "bit32.bxor(${1:numbers})",
+        "description": "Returns the bitwise exclusive or of its operands."
+    },
+    "bit32.extract": {
+        "prefix": "extract",
+        "body": "bit32.extract(${1:n}, ${2:field}, ${3:width})",
+        "description": "Returns the unsigned number formed by the bits field to field + width - 1 from n."
+    },
+    "bit32.lrotate": {
+        "prefix": "lrotate",
+        "body": "bit32.lrotate(${1:x}, ${2:disp})",
+        "description": "Returns the number x rotated disp bits to the left."
+    },
+    "bit32.lshift": {
+        "prefix": "lshift",
+        "body": "bit32.lshift(${1:x}, ${2:disp})",
+        "description": "Returns the number x shifted disp bits to the left."
+    },
+    "bit32.rrotate": {
+        "prefix": "rrotate",
+        "body": "bit32.rrotate(${1:x}, ${2:disp})",
+        "description": "Returns the number x rotated disp bits to the right."
+    },
+    "bit32.rshift": {
+        "prefix": "rshift",
+        "body": "bit32.rshift(${1:x}, ${2:disp})",
+        "description": "Returns the number x shifted disp bits to the right"
+    },
+
+    "coroutine.create": {
+        "prefix": "cocreate",
+        "body": "coroutine.create(${1:f})",
+        "description": "Creates a new coroutine, with body f. f must be a Lua function."
+    },
+    "coroutine.resume": {
+        "prefix": "coresume",
+        "body": "coroutine.resume(${1:co})",
+        "description": "Starts or continues the execution of the coroutine passed. The first time you resume a coroutine, it starts running its body."
+    },
+    "coroutine.running": {
+        "prefix": "corunning",
+        "body": "coroutine.running()",
+        "description": "Returns the running coroutine."
+    },
+    "coroutine.status": {
+        "prefix": "costatus",
+        "body": "coroutine.status(${1:co})",
+        "description": "Returns the status of coroutine co. Statuses that may be returned are 'running', 'suspended', 'normal', or 'dead'."
+    },
+    "coroutine.wrap": {
+        "prefix": "cowrap",
+        "body": "coroutine.wrap(${1:f})",
+        "description": "Creates a new coroutine, with body f. f must be a Lua function. Returns a function that resumes the coroutine each time it is called."
+    },
+    "coroutine.yield": {
+        "prefix": "coyield",
+        "body": "coroutine.yield()",
+        "description": "Suspends the execution of the calling coroutine. Any arguments to yield are passed as extra results to resume."
+    },
+
+    "debug.traceback": {
+        "prefix": "detrace",
+        "body": "debug.traceback()",
+        "description": "Returns a traceback of the current function call stack as a string."
+    },
+    "debug.profilebegin": {
+        "prefix": "debegin",
+        "body": "debug.profilebegin(${1:label})",
+        "description": "Opens a microprofiler label."
+    },
+    "debug.profileend": {
+        "prefix": "deend",
+        "body": "debug.profileend()",
+        "description": "Closes the top microprofiler label."
+    },
+
+    "math.abs": {
+        "prefix": "abs",
+        "body": "math.abs(${1:x})",
+        "description": "Returns the absolute value of x."
+    },
+    "math.acos": {
+        "prefix": "acos",
+        "body": "math.acos(${1:x})",
+        "description": "Returns the arc cosine of x."
+    },
+    "math.asin": {
+        "prefix": "asin",
+        "body": "math.asin(${1:x})",
+        "description": "Returns the arc sine of x."
+    },
+    "math.atan": {
+        "prefix": "atan",
+        "body": "math.atan(${1:x})",
+        "description": "Returns the arc tangent of x (in radians)."
+    },
+    "math.atan2": {
+        "prefix": "atan2",
+        "body": "math.atan2(${1:y}, ${2:x})",
+        "description": "Returns the arc tangent of y/x (in radians), but uses the signs of both parameters to find the quadrant of the result."
+    },
+    "math.ceil": {
+        "prefix": "ceil",
+        "body": "math.ceil(${1:x})",
+        "description": "Returns the smallest integer larger than or equal to x."
+    },
+    "math.clamp": {
+        "prefix": "clamp",
+        "body": "math.clamp(${1:x}, ${2:min}, ${3:max})",
+        "description": "Returns a number between min and max, inclusive."
+    },
+    "math.cos": {
+        "prefix": "cos",
+        "body": "math.cos(${1:x})",
+        "description": "Returns the cosine of x (assumed to be in radians)."
+    },
+    "math.cosh": {
+        "prefix": "cosh",
+        "body": "math.cosh(${1:x})",
+        "description": "Returns the hyperbolic cosine of x."
+    },
+    "math.deg": {
+        "prefix": "deg",
+        "body": "math.deg(${1:x})",
+        "description": "Returns the angle x (given in radians) in degrees."
+    },
+    "math.exp": {
+        "prefix": "exp",
+        "body": "math.exp(${1:x})",
+        "description": "Returns the value e^x."
+    },
+    "math.floor": {
+        "prefix": "floor",
+        "body": "math.floor(${1:x})",
+        "description": "Returns the largest integer smaller than or equal to x."
+    },
+    "math.fmod": {
+        "prefix": "fmod",
+        "body": "math.fmod(${1:x}, ${2:y})",
+        "description": "Returns the remainder of the division of x by y that rounds the quotient towards zero."
+    },
+    "math.frexp": {
+        "prefix": "frexp",
+        "body": "math.frexp(${1:x})",
+        "description": "Returns m and e such that x = m*2^e, e is an integer and the absolute value of m is in the range [0.5, 1)."
+    },
+    "math.ldexp": {
+        "prefix": "ldexp",
+        "body": "math.ldexp(${1:x}, ${2:e})",
+        "description": "Returns m*2^e (e should be an integer)."
+    },
+    "math.log": {
+        "prefix": "log",
+        "body": "math.log(${1:x}, ${2:base})",
+        "description": "Returns the logarithm of x using the given base, or the mathematical constant e if no base is provided (natural logarithm)."
+    },
+    "math.log10": {
+        "prefix": "log10",
+        "body": "math.log10(${1:x})",
+        "description": "Returns the base-10 logarithm of x."
+    },
+    "math.max": {
+        "prefix": "max",
+        "body": "math.max(${1:x}, ${2:...})",
+        "description": "Returns the maximum value among the numbers passed to the function."
+    },
+    "math.min": {
+        "prefix": "min",
+        "body": "math.min(${1:x}, ${2:...})",
+        "description": "Returns the minimum value among the numbers passed to the function."
+    },
+    "math.modf": {
+        "prefix": "modf",
+        "body": "math.modf(${1:x})",
+        "description": "Returns two numbers, the integral part of x and the fractional part of x."
+    },
+    "math.noise": {
+        "prefix": "noise",
+        "body": "math.noise(${1:x}, ${2:y}, ${3:z})",
+        "description": "Returns a perlin noise value between -1 and 1."
+    },
+    "math.pow": {
+        "prefix": "pow",
+        "body": "math.pow(${1:x}, ${2:y})",
+        "description": "Returns x^y. (You can also use the expression x^y to compute this value.)"
+    },
+    "math.rad": {
+        "prefix": "rad",
+        "body": "math.rad(${1:x})",
+        "description": "Returns the angle x (given in degrees) in radians."
+    },
+    "math.random": {
+        "prefix": "random",
+        "body": "math.random(${1:m}, ${2:n})",
+        "description": "Returns a random number random numbers in the range [m, n]."
+    },
+    "math.randomseed": {
+        "prefix": "randomseed",
+        "body": "math.randomseed(${1:x})",
+        "description": "Sets x as the seed for the pseudo-random generator: equal seeds produce equal sequences of numbers."
+    },
+    "math.sign": {
+        "prefix": "sign",
+        "body": "math.sign(${1:x})",
+        "description": "Returns -1 if x < 0, 0 if x == 0, or 1 if x > 0."
+    },
+    "math.sin": {
+        "prefix": "sin",
+        "body": "math.sin(${1:x})",
+        "description": "Returns the sine of x (assumed to be in radians)."
+    },
+    "math.sinh": {
+        "prefix": "sinh",
+        "body": "math.sinh(${1:x})",
+        "description": "Returns the hyperbolic sine of x."
+    },
+    "math.sqrt": {
+        "prefix": "sqrt",
+        "body": "math.sqrt(${1:x})",
+        "description": "Returns the square root of x. (You can also use the expression x^0.5 to compute this value.)"
+    },
+    "math.tan": {
+        "prefix": "tan",
+        "body": "math.tan(${1:x})",
+        "description": "Returns the tangent of x (assumed to be in radians)."
+    },
+    "math.tanh": {
+        "prefix": "tanh",
+        "body": "math.tanh(${1:x})",
+        "description": "Returns the hyperbolic tangent of x."
+    },
+    "math.huge": {
+        "prefix": "huge",
+        "body": "math.huge",
+        "description": "The value HUGE_VAL, a value larger than or equal to any other numerical value."
+    },
+    "math.pi": {
+        "prefix": "pi",
+        "body": "math.pi",
+        "description": "The value of pi."
+    },
+
+    "os.time": {
+        "prefix": "time",
+        "body": "os.time()",
+        "description": "Returns how many seconds have elapsed since the UNIX epoch (1 January 1970, 00:00:00), under UTC time."
+    },
+    "os.difftime": {
+        "prefix": "difftime",
+        "body": "os.difftime(${1:t2}, ${2:t1})",
+        "description": "Returns the number of seconds from t1 to t2."
+    },
+    "os.date": {
+        "prefix": "date",
+        "body": "os.date(${1:formatString}, ${2:time})",
+        "description": "Returns a table containing the components of a given time. The formatString must be either \"*t\" (local time) or \"!*t\" (UTC time)."
+    },
+
+    "string.byte": {
+        "prefix": "byte",
+        "body": "string.byte(${1:s}, ${2:i}, ${3:j})",
+        "description": "Returns the internal numerical codes of the characters s[i], s[i+1], …, s[j]. The default value for i is 1; the default value for j is i."
+    },
+    "string.char": {
+        "prefix": "char",
+        "body": "string.char(${1:...})",
+        "description": "Returns a string with length equal to the number of arguments, in which each character has the internal numerical code equal to its corresponding argument."
+    },
+    "string.find": {
+        "prefix": "find",
+        "body": "string.find(${1:s}, ${2:pattern}, ${init:1}, ${plain:false})",
+        "description": "Looks for the first match of pattern in the string s. If it finds a match, then find returns the indices of s where this occurrence starts and ends; otherwise, it returns nil."
+    },
+    "string.format": {
+        "prefix": "format",
+        "body": "string.format(${1:formatString}, ${2:...})",
+        "description": "Returns a formatted version of its variable number of arguments following the description given in its first argument."
+    },
+    "string.gmatch": {
+        "prefix": "gmatch",
+        "body": "string.gmatch(${1:s}, ${2:pattern})",
+        "description": "Returns an iterator function that, each time it is called, returns the next captures from pattern over the string s."
+    },
+    "string.gsub": {
+        "prefix": "gsub",
+        "body": "string.gsub(${1:s}, ${2:pattern}, ${3:repl})",
+        "description": "Returns a copy of s in which all (or the first n, if given) occurrences of the pattern have been replaced by a replacement string specified by repl, which can be a string, a table, or a function. gsub also returns, as its second value, the total number of matches that occurred."
+    },
+    "string.len": {
+        "prefix": "len",
+        "body": "string.len(${1:s})",
+        "description": "Receives a string and returns its length."
+    },
+    "string.lower": {
+        "prefix": "lower",
+        "body": "string.lower(${1:s})",
+        "description": "Receives a string and returns a copy of this string with all uppercase letters changed to lowercase."
+    },
+    "string.match": {
+        "prefix": "match",
+        "body": "string.match(${1:s}, ${2:pattern}, ${init:1})",
+        "description": "Looks for the first match of pattern in the string s. If a match is found, it is returned; otherwise, it returns nil. A third, optional numerical argument init specifies where to start the search; its default value is 1 and can be negative."
+    },
+    "string.rep": {
+        "prefix": "rep",
+        "body": "string.rep(${1:s}, ${2:n})",
+        "description": "Returns a string that is the concatenation of n copies of the string s."
+    },
+    "string.reverse": {
+        "prefix": "reverse",
+        "body": "string.reverse(${1:s})",
+        "description": "Returns a string that is the string s reversed."
+    },
+    "string.split": {
+        "prefix": "split",
+        "body": "string.split(${1:s}, ${2:separator})",
+        "description": "Splits a string into parts based on the defined separator character(s), returning a table of ordered results."
+    },
+    "string.sub": {
+        "prefix": "sub",
+        "body": "string.sub(${1:s}, ${2:i}, ${3:j})",
+        "description": "Returns the substring of s that starts at i and continues until j; i and j can be negative. If j is absent, then it is assumed to be equal to -1 (which is the same as the string length)."
+    },
+    "string.upper": {
+        "prefix": "upper",
+        "body": "string.upper(${1:s})",
+        "description": "Receives a string and returns a copy of this string with all lowercase letters changed to uppercase. All other characters are left unchanged."
+    },
+
+    "table.concat": {
+        "prefix": "tabconcat",
+        "body": "table.concat(${1:t}, ${2:sep}, ${3:i}, ${4:j})",
+        "description": "Given an array where all elements are strings or numbers, returns the string t[i] … sep … t[i+1] … sep … t[j]. The default value for sep is an empty string."
+    },
+    "table.foreach": {
+        "prefix": "tabforeach",
+        "body": "table.foreach(${1:t}, ${2:f})",
+        "description": "Iterates over the provided table, passing the key and value of each iteration over to the provided function."
+    },
+    "table.foreachi": {
+        "prefix": "tabforeachi",
+        "body": "table.foreachi(${1:t}, ${2:f})",
+        "description": "Iterates over the provided table, passing the index and value of each iteration over to the provided function."
+    },
+    "table.getn": {
+        "prefix": "tabgetn",
+        "body": "table.getn(${1:t})",
+        "description": "Returns the number of elements in the table passed."
+    },
+    "table.insert": {
+        "prefix": "tabinsert",
+        "body": "table.insert(${1:t}, ${2:pos}, ${3:value})",
+        "description": "Appends the provided value to the end of the array unless pos is specified."
+    },
+    "table.remove": {
+        "prefix": "tabremove",
+        "body": "table.remove(${1:t}, ${2:pos})",
+        "description": "Removes from array t the element at position pos, returning the value of the removed element."
+    },
+    "table.sort": {
+        "prefix": "tabsort",
+        "body": "table.sort(${1:t}, ${2:comp})",
+        "description": "Sorts elements of array t in a given order, from t[1] to t[#t]. If comp is given, then it must be a function that accepts two elements."
+    },
+    "table.pack": {
+        "prefix": "tabpack",
+        "body": "table.pack(${1:values})",
+        "description": "Returns a new table with all arguments stored into keys 1, 2, etc. and with a field “n” with the total number of arguments."
+    },
+    "table.unpack": {
+        "prefix": "tabunpack",
+        "body": "table.unpack(${1:list}, ${2:i}, ${3:j})",
+        "description": "Returns the elements from the given list."
+    },
+    "table.move": {
+        "prefix": "tabmove",
+        "body": "table.move(${1:a1}, ${2:f}, ${3:e}, ${4:t}, ${5:a2})",
+        "description": "Moves elements from table a1 to table a2."
+    },
+    "table.create": {
+        "prefix": "tabcreate",
+        "body": "table.create(${1:count}, ${2:value})",
+        "description": "Creates a table with the array portion allocated to the given number of elements, optionally filled with the given value."
+    },
+    "table.find": {
+        "prefix": "tabfind",
+        "body": "table.find(${1:haystack}, ${2:needle}, ${3:init})",
+        "description": "Within the given array-like table haystack, find the first occurrence of value needle, starting from index init or the beginning if not provided. If the value is not found, nil is returned."
+    },
+
+    "utf8.char": {
+        "prefix": "utfchar",
+        "body": "utf8.char(${1:codepoints})",
+        "description": "Receives zero or more codepoints as integers, converts each one to its corresponding UTF-8 byte sequence and returns a string with the concatenation of all these sequences."
+    },
+    "utf8.codes": {
+        "prefix": "utfcodes",
+        "body": "utf8.codes(${1:str})",
+        "description": "Returns an iterator function that will iterate over all codepoints in str."
+    },
+    "utf8.codepoint": {
+        "prefix": "utfcodepoint",
+        "body": "utf8.codepoint(${1:str})",
+        "description": "Returns the codepoints (as integers) from all codepoints in the provided string (str) that start between byte positions i and j (both included)."
+    },
+    "utf8.len": {
+        "prefix": "utflen",
+        "body": "utf8.len(${1:str}, ${2:i}, ${3:j})",
+        "description": "Returns the number of UTF-8 codepoints in the string str that start between positions i and j."
+    },
+    "utf8.offset": {
+        "prefix": "utfoffset",
+        "body": "utf8.offset(${1:s}, ${2:n}, ${3:i})",
+        "description": "Returns the position (in bytes) where the encoding of the n-th codepoint of s (counting from byte position i) starts."
+    },
+    "utf8.graphemes": {
+        "prefix": "utfgraphemes",
+        "body": "utf8.graphemes(${1:s}, ${2:i}, ${3:j})",
+        "description": "Returns an iterator function that will iterate the grapheme clusters of str."
+    },
+    "utf8.nfcnormalize": {
+        "prefix": "utfnfcnorm",
+        "body": "utf8.nfcnormalize(${1:s})",
+        "description": "Converts the input string to Normal Form C, which tries to convert decomposed characters into composed characters."
+    },
+    "utf8.nfdnormalize": {
+        "prefix": "utfnfdnorm",
+        "body": "utf8.nfdnormalize(${1:s})",
+        "description": "Converts the input string to Normal Form D, which tries to break up composed characters into decomposed characters."
+    },
+    "utf8.charpattern": {
+        "prefix": "utfcharpat",
+        "body": "utf8.charpattern",
+        "description": "Matches exactly zero or more UTF-8 byte sequence, assuming that the subject is a valid UTF-8 string."
+    }
+}
