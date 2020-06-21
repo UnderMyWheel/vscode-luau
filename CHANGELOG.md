@@ -1,5 +1,11 @@
 # Luau Changelog
 
+## 1.0.1 (20 June 2020)
+
+### Fixed
+
+1. Fixed issue with README file
+
 ## 1.0.0 (20 June 2020)
 
 ### Enhancements
