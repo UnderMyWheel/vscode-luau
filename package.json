@@ -1,5 +1,5 @@
 {
-    "name": "luau",
+    "name": "roblox-lua",
     "icon": "icon.png",
     "displayName": "Luau",
     "description": "Support for Roblox's Luau language.",

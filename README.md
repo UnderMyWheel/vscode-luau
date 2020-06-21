@@ -1,3 +1,7 @@
 # Luau for Visual Studio Code
 
-A [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=UnderMyWheel.luau&ssr=false#overview) with syntax and snippet support for [Roblox's Luau language](https://developer.roblox.com/en-us).
+![Rating](https://vsmarketplacebadge.apphb.com/rating-short/HookyQR.beautify.svg) ![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/HookyQR.beautify.svg) ![Installs](https://vsmarketplacebadge.apphb.com/installs-short/HookyQR.beautify.svg)
+
+### Features
+- Snippets
+- Syntax highlighting

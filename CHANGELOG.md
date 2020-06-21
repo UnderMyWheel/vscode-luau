@@ -1,14 +1,15 @@
 # Luau Changelog
 
-## 1.0.0 (8 June 2020)
+## 1.0.0 (20 June 2020)
 
 ### Enhancements
 
 1. Snippet support
-2. Removed unused keywords
-3. Rebranded from "Roblox Lua" to "Luau"
-4. `plugin` is now properly highlighted as a built-in keyword
-5. Built-in library functions are highlighted differently from other functions
+2. Brand new README page
+3. Removed unused keywords
+4. Rebranded from "Roblox Lua" to "Luau"
+5. `plugin` is now properly highlighted as a built-in keyword
+6. Built-in library functions are highlighted differently from other functions
 
 ### Fixed
 
