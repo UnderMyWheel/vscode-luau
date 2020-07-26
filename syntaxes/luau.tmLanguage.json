@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "keyword.control.luau",
-			"match": "\\b(and|break|do|else|elseif|end|false|for|function|if|in|local|nil|not|or|plugin|repeat|return|self|then|true|until|while)\\b"
+			"match": "\\b(and|break|continue|do|else|elseif|end|false|for|function|if|in|local|nil|not|or|plugin|repeat|return|self|then|true|until|while)\\b"
 		},
 		{
 			"name": "constant.numeric.luau",
