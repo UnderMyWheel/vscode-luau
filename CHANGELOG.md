@@ -1,5 +1,14 @@
 # Luau Changelog
 
+## 1.0.2 (25 July 2020)
+
+### Fixed
+
+1. Fixed Lua icons not appearing
+2. Fixed ``continue`` key not highlighting
+3. Fixed extension not being compatible with other Lua extensions
+
+
 ## 1.0.1 (20 June 2020)
 
 ### Fixed
@@ -34,6 +43,7 @@
 ### Enhancements
 
 1. Support for positive and negative signs
+
 
 ### Fixed
 
