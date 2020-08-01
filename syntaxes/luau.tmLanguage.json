@@ -3,7 +3,7 @@
 	"patterns": [
 		{
 			"name": "keyword.luau",
-			"match": "\\b(workspace|game|script|shared|ipairs|next|pairs|_G|_VERSION|utf8\\.(charpattern))|math\\.(huge|pi)\\b"
+			"match": "\\b(workspace|game|script|shared|ipairs|next|pairs|_G|_VERSION|utf8\\.(charpattern)|math\\.(huge|pi))\\b"
 		},
 		{
 			"name": "support.class.luau",
@@ -19,7 +19,7 @@
 		},
 		{
 			"name": "constant.numeric.luau",
-			"match": "(?<!\\S)(?!$)[-+]?(\\d*|\\d+(?:_\\d+)*)(?:\\.\\d+)?(?!\\S)\\b"
+			"match": "((?<!\\S)|(?<=[,;]))(?!$)[-+]?(\\d*|\\d+(?:_\\d+)*)(?:.\\d+)?((?!\\S)|(?=[,;]))"
 		},
 		{
 			"captures": {
