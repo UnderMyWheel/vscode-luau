@@ -1,5 +1,12 @@
 # Luau Changelog
 
+## 1.0.3 (1 August 2020)
+
+### Fixed
+
+1. Fixed incorrect partial word highlighting
+2. Fixed numbers with underscore separators directly followed by a comma/semicolon not being highlighted
+
 ## 1.0.2 (25 July 2020)
 
 ### Fixed
