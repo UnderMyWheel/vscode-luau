@@ -1,4 +1,10 @@
-# Luau Changelog
+# Luau Changelog 
+
+## 1.0.4 (2 August 2020)
+
+### Fixed
+
+1. Fixed broken highlighting when existing whitespace at the beginning of the line
 
 ## 1.0.3 (1 August 2020)
 
