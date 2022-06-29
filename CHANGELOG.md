@@ -1,5 +1,11 @@
 # Luau Changelog 
 
+## 1.0.5 (29 June 2022)
+
+### Enhancements
+
+1. Added highlight support for ``DateTime`` and ``task`` library functions
+
 ## 1.0.4 (2 August 2020)
 
 ### Fixed
