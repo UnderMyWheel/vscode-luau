@@ -11,7 +11,7 @@
 		},
 		{
 			"name": "support.class.luau",
-			"match": "\\b(Axes|BrickColor|CFrame|Color3|ColorSequence|ColorSequenceKeypoint|DockWidgetPluginGuiInfo|Enum|Faces|Instance|NumberRange|NumberSequence|NumberSequenceKeypoint|PhysicalProperties|Random|Ray|Rect|Region3|Region3int16|TweenInfo|UDim|UDim2|Vector2|Vector2int16|Vector3|Vector3int16)\\b"
+			"match": "\\b(Axes|BrickColor|CatalogSearchParams|CFrame|Color3|ColorSequence|ColorSequenceKeypoint|DateTime|DockWidgetPluginGuiInfo|Enum|EnumItem|Enums|Faces|FloatCurveKey|Instance|NumberRange|NumberSequence|NumberSequenceKeypoint|OverlapParams|PathwayPoint|PhysicalProperties|Random|Ray|Rect|Region3|Region3int16|TweenInfo|UDim|UDim2|Vector2|Vector2int16|Vector3|Vector3int16)\\b"
 		},
 		{
 			"name": "keyword.control.luau",
@@ -27,7 +27,7 @@
 					"name": "keyword.function.luau"
 				}
 			},
-			"match": "\\b(bit32\\.(arshift|band|bnot|bor|btest|bxor|extract|replace|lrotate|lshift|rrotate|rshift)|coroutine\\.(create|resume|running|status|wrap|yield)|DateTime\\.(fromIsoDate|fromLocalTime|fromUniversalTime|fromUnixTimestamp|fromUnixTimestampMillis|now)|debug\\.(traceback|profilebegin|profileend)|math\\.(abs|acos|asin|atan|atan2|ceil|clamp|cos|cosh|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|noise|pow|rad|random|randomseed|sign|sin|sinh|sqrt|tan|tanh)|os\\.(time|difftime|date)|string\\.(byte|char|find|format|gmatch|gsub|len|lower|match|rep|reverse|split|sub|upper)|table\\.(concat|foreach|foreachi|getn|insert|remove|sort|pack|unpack|move|create|find)|utf8\\.(char|codes|codepoint|len|offset|graphemes|nfcnormalize|nfdnormalize)|assert|collectgarbage|delay|elapsedTime|error|getmetatable|newproxy|pcall|print|rawequal|rawget|rawset|require|select|setmetatable|settings|spawn|tick|time|tonumber|tostring|type|typeof|unpack|UserSettings|wait|warn|xpcall)\\s*\\("
+			"match": "\\b(bit32\\.(arshift|band|bnot|bor|btest|bxor|extract|replace|lrotate|lshiftrrotate|rshift)|coroutine\\.(create|resume|running|status|wrap|yield)|DateTime\\.(fromIsoDate|fromLocalTime|fromUniversalTime|fromUnixTimestamp|fromUnixTimestampMillis|now)|debug\\.(traceback|profilebegin|profileend)|math\\.(abs|acos|asin|atan|atan2|ceil|clamp|cos|cosh|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|noise|pow|rad|random|randomseed|sign|sin|sinh|sqrt|tan|tanh)|os\\.(time|difftime|date)|string\\.(byte|char|find|format|gmatch|gsub|len|lower|match|rep|reverse|split|sub|upper)|table\\.(concat|foreach|foreachi|getn|insert|remove|sort|pack|unpack|move|create|find)|task\\.(spawn|defer|delay|wait)|utf8\\.(char|codes|codepoint|len|offset|graphemes|nfcnormalize|nfdnormalize)|assert|collectgarbage|delay|elapsedTime|error|getmetatable|newproxy|pcall|print|rawequal|rawget|rawset|require|select|setmetatable|settings|spawn|tick|time|tonumber|tostring|type|typeof|unpack|UserSettings|wait|warn|xpcall)\\s*\\("
 		},
 		{
 			"include": "source.lua"
