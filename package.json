@@ -25,10 +25,6 @@
         "Snippets",
         "Programming Languages"
     ],
-    "activationEvents": [
-        "onLanguage:luau"
-    ],
-    "main": "./src/extension.ts",
     "contributes": {
         "configuration": {
             "title": "Luau",
