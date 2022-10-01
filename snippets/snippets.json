@@ -104,7 +104,7 @@
 
     "get service": {
         "prefix": "getser",
-        "body": "game:GetService(\"${1|AssetService,BadgeService,ChangeHistoryService,CollectionService,ContextActionService,DataStoreService,GamepadService,GamePassService,GroupService,GuiService,HapticService,HttpService,InsertService,JointsService,LocalizationService,LogService,MarketplaceService,MessagingService,PathfindingService,PhysicsService,PluginGuiService,PolicyService,RunService,ServerScriptService,SocialService,SoundService,StudioService,TeleportService,TestService,TextService,TweenService,UserInputService,VRService,Workspace|}\")",
+        "body": "local $1 = game:GetService(\"${1|AssetService,BadgeService,ChangeHistoryService,CollectionService,ContextActionService,DataStoreService,GamepadService,GamePassService,GroupService,GuiService,HapticService,HttpService,InsertService,JointsService,LocalizationService,LogService,MarketplaceService,MessagingService,PathfindingService,PhysicsService,PluginGuiService,PolicyService,RunService,ServerScriptService,SocialService,SoundService,StudioService,TeleportService,TestService,TextService,TweenService,UserInputService,VRService,Workspace|}\")",
         "description": "Returns a service with the class name requested."
     },
 
